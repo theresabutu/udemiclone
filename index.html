@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy Clone</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+     <nav>
+        <button class="menu_icon">
+            <i class="fa fa-bars"></i>
+
+            <button>
+                <img class="logo" src="https://www.Udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="udemy-logo"/>
+
+            </button>
+            <button class="cat" type="button">categories</button>
+             
+            <form>
+                <button type="button" onclick="search()">
+                    <i class="fa fa-search"></i>
+            
+                </button>
+                <input id="search_query" type="text" placeholder="search for anything ">
+            </form>
+            <button class="udemy_business" type="button">udemy Business</button>
+
+            <button class="udemy_teach" type="button">Teach on Udemy</button>
+            <button class="cart" type="button">
+                <i class="material-icons">Shopping_cart</i>
+            </button>
+            <button class="log_in" type="button">Log in</button>
+
+            <button class="sign_up" type="button">Sign up</button>
+            <button class="globe">
+                <i class="fa fa-globe"></i>
+            </button>
+     </nav>
+     <div class="page">
+        <header>
+            <div>
+                <div>
+                    <img height="300" width="1340" src="https://img-b.udemycdn.com/notices/web_banner/slide_2_image_udlite/a4706fe0-162f-4f2a-a8e4-d320a5c5f3ee.png" alt="udebmy background">
+                    <h1>New to Udemy? Lucky you.</h1>
+                    <p>
+                        Courses start at E$169.99. Get your new student offer before it eexpires.
+                    </p>
+                    
+                </div>
+            </div>
+        </header>
+        <div class="break">
+
+        <section class="courses">
+            <h1>A broad section of courses</h1>
+            <p>
+                Choose from 185,000 courses with new additions published every month
+            </p>
+    
+            <ul class="nav">
+                <li class="nav-items"></li>
+                <li id="cat1" class="nav-item">
+                    <button onclick="cat_search ('python', 'cat1')">python</button>
+                </li>
+
+                <li id="cat2" class="nav-item">
+                    <button onclick="cat_search ('Excel', 'cat2')">Excel
+                    </button>
+                </li>
+                <li id="cat3" class="nav-item">
+                    <button onclick="cat_search ('Web Development', 'cat3')">Web Development</button>
+                </li>
+                
+                <li id="cat4" class="nav-item">
+                    <button onclick="cat_search ('JavaScript', 'cat4')">JavaScript</button>
+                </li>
+
+                <li id="cat5" class="nav-item">
+                    <button onclick="cat_search ('Data Science', 'cat5')">Data Science</button>
+                </li>
+
+                <li id="cat6" class="nav-item">
+                    <button onclick="cat_search ('AWS Certification', 'cat6')">AWS Certification</button>
+                </li>
+
+                <li id="cat7" class="nav-item">
+                    <button onclick="cat_search ('Drawing', 'cat7')">Drawing</button>
+                </li>
+                <li id="cat" class="nav-item">
+                    <button onclick="cat_search ('', 'cat1')"></button>
+                </li>
+            </ul>
+
+            <section class="courses_box">
+                <div>
+                    <h2>Expand your career opportunities with python</h2>
+                    <p>
+                        Take one of Udemy's range of pyhton courses and learn how to code using 
+                        this incredibly useful language. Its simple syntax and readability makes
+                        python perfect for Flask, Django, data science, and machine learning.
+                        You'll learn hiw to build everything from games to sites to apps. Choose
+                        from a range of courses that will appeal to both beginners and advanced
+                        developers alike.
+                    </p>
+                    <button type="button"> Explore python</button>
+                </div>
+
+                <div 
+                id="carouselExampleControls"
+                class="carousel courses_list"
+                data-bs-ride="carousel">
+                <div class="carousel-inner courses_ul">
+                    
+            </div>
+            <button
+            class="carousel-control-prev bg-black opacity-100"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+            >
+
+            <span 
+             class="carousel-control-prev-icon"
+             aria-hidden="true">
+
+            </span>
+            </button>
+            <button
+            class="carousel-control-next bg-black opacity-100"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+            >
+            <span 
+            class="carousel-control-prev-icon"
+            aria-hidden="true"> 
+            </span>
+            <span class="visually-hidden">Next</span>
+            </button>
+                </div>
+            </section>
+        </section>
+        <div class="break"></div>
+
+        <section class="categories">
+            <h4 class="mb-4">Top Categories</h4>
+            <div class="row cat_row">
+
+            </div>
+        </section>
+        <footer></footer>
+</body>
+
+</html>

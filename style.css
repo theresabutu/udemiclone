@@ -1,0 +1,376 @@
+/*
+Navigation
+Bar*/
+
+    body{
+        margin:0
+    }
+
+    nav{
+        height:60px;
+        display: flex;
+        padding: 9px;
+        justify-content: flex-end;
+        align-items: center;
+        box-shadow: 5px 5px 16px rgba(128, 128, 128, 0.382);
+        z-index: 1;
+        position: relative;
+    }
+
+    nav button{
+        border:none;
+        background-color: white;
+        color: black;
+        font-weight: 400;
+        line-height: 1.4;
+        font-size: 0.87rem;
+        cursor: pointer;
+        margin: 3px;
+        width: max-content;
+        white-space: nowrap;
+    }
+
+    nav form {
+        display: flex;
+        width: 100%;
+        margin-right: 90px;
+        position: relative;
+        right: 10px;
+        margin: auto;
+    }
+
+    nav form input{
+        border: 0.1em solid black;
+        padding: 0px 2.4rem 0px 2.4rem;
+        display: flex;
+        align-items: stretch;
+        border-radius: 30px;
+        width: 100%;
+        height: 47px;
+        margin-right: 2px;
+        background-color: rgba(0, 0, 0, 0.029);
+    }
+    nav form input:focus{
+        outline: none;
+    }
+
+
+    nav form button{
+        border: none;
+        position: relative;
+        background: rgba(76, 175, 80, 0);
+        left: 35px;
+    }
+
+    .menu_icon{
+        display: none;
+    }
+
+    .logo{
+        border: none;
+        height:2.1rem;
+        background-color: white;
+        position: relative;
+        top:4px;
+    }
+
+    .sign_up{
+        background-color: black;
+        color: white;
+        font-weight: 900;
+        height: 40px;
+        width: max-content;
+        padding: 0px 15px 0px 15px;
+    }
+
+    .log_in{
+        border: 1px solid black;
+        font-weight: 900;
+        height: 40px;
+        width: max-content;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .cart{
+        padding:  11px 14px;
+        height: max-content;
+    }
+
+    .globe{
+        border: 1px solid black;
+        margin-right: 8px;
+        padding: 11px 4px;
+        height: 40px;
+
+    }
+
+    .page{
+        width: 100vw;
+        margin: auto;
+        object-fit:contain;
+        object-position:initial;
+        position: absolute;
+        top: -400px;
+        left: -80px;
+    }
+
+    header{
+        z-index:-1;
+        display: flex;
+    }
+
+    header div{
+        height:530px;
+        width:83rem;
+        background-image: url(https://img-b.udemycdn.com/notices/web_banner/slide_2_image_udlite/a4706fe0-162f-4f2a-a8e4-d320a5c5f3ee.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    header div div{
+        min-height:42px;
+        min-width: 337px;
+        display: inline-block;
+        background-image: none;
+        background-color: white;
+        padding:0.1rem 1.3rem 2.3rem 1.3rem;
+        position: relative;
+        height: 42%;
+        width: 29%;
+        top: 15%;
+        left: 5%;
+        box-shadow: 1px 1px 19px rgba (128 128 128 0.31);
+        line-height: 29px;
+
+    }
+    header div div h1{
+        margin-top: 20px;
+
+    }
+    header div div p{
+        font-size: 19px;
+
+    }
+    .small_header{
+        display: none;
+
+    }
+
+    .break{
+        height: 40px;
+        margin: 20px 0px;
+    }
+
+    .courses h1{
+        font-size: 37px;
+        margin: 0px;
+
+    }
+
+    .courses p{
+        font-size: larger;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .nav-item button{
+        border: none;
+        background: none;
+        font-weight: bold;
+        list-style: none;
+        padding: 0px;
+        margin-right: 10px;
+        color: grey;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .nav-item + .active button{
+        color: black;
+    }
+
+    .courses_box{
+        border: 1px solid rgba(128, 128, 128, 0.365);
+        max-width: 1286px;
+    }
+
+    .courses_box h2{
+        font-size: x-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .courses_box p{
+        width: 60px;font-size: 16px;
+        color: rgb(62, 62, 62);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 22px;
+    }
+
+    .courses_box> div{
+        margin:30px;
+
+    }
+
+    .courses_box div button{
+        border: 1px solid black;
+        background-color: white;
+        font-size: 14px;
+        font-weight: bold;
+        color:rgb(43, 43, 43);
+        
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        height: 50px;
+        width: 50px;
+        border-radius: 30px;
+    }
+    .carousel-control-next{
+        margin: 100px 0px;
+        margin-left: 29px;
+
+    }
+
+    .carousel-control-prev{
+        margin: 100px 0px;
+        margin-right: 44px;
+
+    }
+
+    .carousel-item{
+        margin: 19px;
+
+    }
+    .courses-ul{
+        margin: 30px;
+        margin-left: 48px;
+        display: flex;
+        width: 96%;
+    }
+
+    .carousel-inner{
+        display: flex;
+    }
+    .course{
+        width: 240px;
+
+    }
+
+    .courses_list .courses-ul .course img{
+        height: 132px;
+        width: 232px;
+        border: 1px solid grey;
+    }
+
+    .course_list .courses-ul .course .title{
+        width:232px;
+        margin: 0px; 
+        margin-top: 2px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .courses_list .courses-ul .course .author {
+        width:232px;
+        margin: 6px 0px 3px 3px; 
+        font-size: small;
+        font-weight: 100;
+    }
+    .courses_list .courses-ul .course .price {
+        width:232px;
+        margin: 0px; 
+        display: inline;
+    }
+    .courses_list .courses-ul .course .old_price {
+        display: inline;
+        font-weight: 120;
+        font-size: 15px;
+        text-decoration: line-through;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        position: relative;
+        left: 10px;
+        margin: 0px;
+    }
+
+    .categories{
+        max-width: 1286px;
+
+    }
+    .cat_card {
+        width:20rem;
+
+    }
+    .footer{
+        height: 300px;
+    }
+    .checked{
+        color: darkorange;
+
+    }
+    .rating {
+        width: 100%;
+        font-size: small;
+    }
+
+    @media (max-width: 1300px) {
+        .udemy_business {
+            display: none;
+        }
+    }
+    @media (max-width: 950px) {
+        .udemy_teach {
+            display: none;
+        }
+    }
+    @media (max-width: 1300px) {
+        .courses_categories li {
+           margin-right: 30px;
+        }
+    }
+    .courses_categories {
+        flex-wrap: wrap;
+        width: auto;
+        min-width: 10px;
+        justify-content: flex-start;
+        line-height: 40px;
+    }
+    .cat{
+        display: none;
+    }
+    header div{
+        background-image: url(assets/small_alarm.png);
+    }
+
+    header div div {
+        height:42%;
+        width: 84%;
+        top: 90%;
+        left: 5%;
+        background-color: white;
+    }
+
+    header div div p {
+        font-size: larger;
+    }
+    .break{
+        height: 230px;
+    }
+
+    @media (max-width: 692px){
+    .cart,
+    nav form,
+    .sign_up,
+    .log_in,
+    .globe{
+        display: none;
+    }
+    }
+
+    .menu_icon{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
